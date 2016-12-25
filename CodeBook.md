@@ -21,14 +21,6 @@ According to the project requirement, the following files are referenced to have
   'test/y_test.txt': Test labels.
   'test/subject_test.txt':Test subject.
 
-Below table shows the catergory and relationship for the above files	
-======================================================================================
-|| Variable Names | Features.txt | subject           | activity(activity_labels.txt) ||
-|| ----------------------------------------------------------------------------------||
-|| Data           |  X_train.txt | subject_train.txt | y_train.txt                   ||
-||                |  X_test.txt  | subject_test.txt  | y_test.txt                    ||
-=======================================================================================
-
 ## Variables
 
   activityTrain,activityTest, subjectTrain, subjectTest, featureTrain and featureTest - contain the data from the downloaded files for test and training data under ./train and ./test directory.
