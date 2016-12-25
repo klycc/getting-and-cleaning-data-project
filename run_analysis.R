@@ -44,7 +44,8 @@ names(data)<-gsub("Gyro", "Gyroscope", names(data))
 names(data)<-gsub("Mag", "Magnitude", names(data))
 names(data)<-gsub("BodyBody", "Body", names(data))
 
-## Extract Tidy Data Set
+## Extract a tidy dataset by creating a data frame with average of 
+## each measurement variable for each activity and each subject.
 data$subject<-as.factor(data$subject)
 data<-data.table(data)
 tidyData<-aggregate(. ~subject+activity, data, mean) 
